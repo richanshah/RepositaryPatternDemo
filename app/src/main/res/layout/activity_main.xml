@@ -23,8 +23,15 @@
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
-
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivProfileIncTopBar"
+                        android:layout_width="45dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/margin_normal"
+                        android:layout_height="45dp"
+                        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+                </androidx.appcompat.widget.Toolbar>
             </com.google.android.material.appbar.AppBarLayout>
 
             <fragment
